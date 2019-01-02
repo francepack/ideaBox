@@ -155,6 +155,11 @@ input,
   border: solid lightgray 2px;
 }
 
+.input-fields input,
+.input-fields textarea {
+  margin: 8px 0;
+}
+
 textarea {
   border-radius: 5px;
 }
@@ -249,7 +254,7 @@ img {
   margin-bottom: 5px;
 }
 
-label { 
+.input-fields label { 
   font-size: 20px;
 }
 
@@ -268,23 +273,13 @@ label {
 
 /* Media Queries ******************* */
 
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  h1 {
-    font-size: 25px;
-  }
-  .box2b button {
-    font-size: 15px;
-    font-weight: 100;
-  }
-}
 
 @media only screen and (max-width: 615px) {
+  .container {
+  grid-template-rows: 88px 300px 50px auto;
+  }
   .box1 {
     display: block;
-    height: 87px;
     padding-top: 0;
   }
   h1 {
@@ -299,17 +294,15 @@ label {
     margin-bottom: 10px;
   }
   .input-fields {
-    margin: 0 10px 20px 10px;
+    margin: 10px;
   }
-  .box2b button {
-    margin: 10px 0;
-    padding: 0;
-    width: 100px;
-    font-size: 80%;
-  }
-  .box2b {
+  .box2 {
     padding: 0;
     margin: 0;
+  }
+  .box2b button {
+    font-size: 80%;
+    width: 100px;
   }
   .idea-cards {
     margin-left: 10px;
@@ -317,8 +310,15 @@ label {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .box2b button {
+    font-size: 70%;
+    width: 80px;
+  }
+}
 
-@media only screen 
+
+/*@media only screen 
   and (min-device-width: 481px) 
   and (max-device-width: 950px)
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -328,4 +328,16 @@ label {
   .box2b button {
     font-size: 20px;
   }
-}
+}*/
+/*@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  h1 {
+    font-size: 25px;
+  }
+  .box2b button {
+    font-size: 15px;
+    font-weight: 100;
+  }
+}*/
