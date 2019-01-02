@@ -12,6 +12,8 @@ var swillButton     =     document.querySelector('.swill-quality');
 var plausibleButton =     document.querySelector('.plausible-quality');
 var geniusButton    =     document.querySelector('.genius-quality');
 var buttons         =     document.querySelector('.box2b');
+var titleValue      =     document.querySelector('.title-input-box');
+var bodyValue       =     document.querySelector('.body-box');
 
 
 
@@ -35,14 +37,21 @@ buttons.addEventListener('click', function(event) {
 
 window.onload = function() {
   var keys = Object.keys(localStorage);
-  for (var i = 0; i < keys.length; i++) {
+  for (var i = 0; i < 10; i++) {
     var parseObj = JSON.parse(localStorage.getItem(keys[i]));
     newCard = new Ideas(parseObj.id, parseObj.title, parseObj.body, parseObj.quality);
-    // var sortedIdeasArray = ideasArray.sort();
     ideasArray.push(newCard);
     appendCard(newCard); 
   }
 }
+
+titleValue.addEventListener('focusout', function(){
+  if(titleValue.value.length === 0){
+    saveButton.disabled = true;
+  }else if(titleValue.value.length > 0){
+   saveButton.disabled = false;
+  };
+});
 //////need onclick event for "show more" button ///
 
 console.log(ideasArray);
