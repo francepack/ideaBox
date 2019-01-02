@@ -1,0 +1,293 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rested",
+				"isRested"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"alig",
+				"align-content\tproperty"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"he",
+				"header\tTag"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"posi",
+				"position\tproperty"
+			],
+			[
+				"pos",
+				"position\tproperty"
+			],
+			[
+				"backgroun",
+				"background-color\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"backgro",
+				"background\tproperty"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"heigh",
+				"height\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"list",
+				"list-style-type\tproperty"
+			],
+			[
+				"hea",
+				"header\tTag"
+			],
+			[
+				"fi",
+				"figcaption\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/exercises/dragon.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/test/hobbit-test.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/exercises/human.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/exercises/pirate.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/test/pirate-test.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/exercises/hobbit.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/exercises/unicorn.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/test/unicorn-test.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/test/vampire-test.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/exercises/vampire.js",
+		"/Users/francema/Turing/javascript-foundations/mythical-creatures/test/dragon-test.js",
+		"/Users/francema/dog-party/style2.css",
+		"/Users/francema/numberGuesser/number-guesser/main.js",
+		"/Users/francema/numberGuesser/number-guesser/css/style.css",
+		"/Users/francema/numberGuesser/number-guesser/index.html",
+		"/Users/francema/Turing/testing-javascript/test.js",
+		"/Users/francema/Turing/testing-javascript/implementation.js",
+		"/Users/francema/Turing/staticComp1/index.html",
+		"/Users/francema/dog-party/index2.html",
+		"/Users/francema/dog-party/main.js",
+		"/Users/francema/Turing/staticComp1/index",
+		"/Users/francema/dog-party/readme.txt",
+		"/Users/francema/dog-party/index.html",
+		"/Users/francema/dog-party/styles.css",
+		"/Users/francema/Desktop/First website/index.html",
+		"/Users/francema/Desktop/First website/style.css",
+		"/Users/francema/Library/Application Support/Sublime Text 3/Packages/User/Choose Browser.sublime-build",
+		"/Users/francema/temp/test2.txt",
+		"/Users/francema/Desktop/testing.txt"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"hobb",
+				"test/hobbit-test.js"
+			],
+			[
+				"ho",
+				"exercises/hobbit.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 122.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

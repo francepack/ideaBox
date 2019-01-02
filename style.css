@@ -1,18 +1,17 @@
-body{
+body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   max-width: 100%;
-  background-color: #F9F9FA;
+  background-color: #EAEAEA;
 }
-
 
 .container {
   display: grid;
-  grid-template-rows: 65px 300px 50px 1fr;
+  grid-template-rows: 72px 300px 50px auto;
 }
 
-.box1{
+.box1 {
   background-color: #524649;
   border: 1px solid black;
   display: grid;
@@ -21,17 +20,16 @@ body{
   padding-top: 10px;
 }
 
-.box2{
+.box2 {
   display: grid;
   background-color: #EAEAEA;
   padding-top: 10px;
- 
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 }
 
-form{
-}
-
-.box2b{
+.box2b {
   display: flex;
   justify-content: space-around;
   background-color: #524649;
@@ -39,49 +37,48 @@ form{
   width: 100%;
 }
 
-.box2b button{
+.box2b button {
   padding: auto;
   margin-top: 10px;
   justify-content: center;
-  border-radius: 12px;
+  border-radius: 10px;
   height: 30px;
   background-color: #6E646B;
   color: #FFFFFF;
   width: 150px;
-  font-size: 23px;
+  font-size: 18px;
 }
 
-.body-box{
+.body-box {
   resize: none;
   border: none;
   padding: 0px;
   height: 95px;
   padding-top: 10px;
 }
-.title-input-box{
+
+.title-input-box { 
   border: none;
   padding: 0px;
 }
 
-.box2-container{
-  display: grid;
-  grid-template-columns: minmax(10px, 1fr) minmax(200px, 700px) minmax(10px, 1fr);
+.input-fields form {
+  max-width: 1000px; 
 }
 
-.box3{
-  background-color: #F9F9FA; 
-  height: 200px;
+.box3 {
+  background-color: #FFFFFF; 
 }
 
-.box3-container{ 
+.box3-container { 
   text-align: center;
 }
 
-.idea-title{
+.idea-title {
   color: #B2A1B1;
 }
 
-.idea-cards{
+.idea-cards {
   background-color: #FFFFFF;
   border: 1px solid #404041;
   box-sizing: border-box;
@@ -90,45 +87,66 @@ form{
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  padding-left: 5px;
+  border-radius: 5px;
+  border: solid lightgray 2px;
 }
 
-h1{
+h1 {
   color: #FFFFFF;
   display: inline;
   font-size: 30px;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
-h2{
+h2 {
   font-size: 15px;
+  text-indent: 10px;
 }
 
-h3{
+h3 {
   font-size: 15px;
   font-weight: 200;
   margin-bottom: 5px;
   text-align: left;
 }
 
-h4{
+h4 {
   display: inline;
   font-size: 15px;
   margin-left: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
-p{
+p {
   font-size: 10px;
+  min-height: 80px;
+  text-indent: 10px;
 }
 
-input{
-  border-radius: 1px;
+.box1 input {
+  border-radius: 5px 0 0 5px;
+}
+
+.box1 button {
+  border-radius: 0 5px 5px 0;
+}
+
+input {
   border: 1px solid gainsboro;
   width: 100%;
 }
 
-img{
+input, 
+.input-fields textarea {
+  border-radius: 5px;
+  border: solid lightgray 2px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+img {
   background-color: #d4d2d8;
   border-radius: 50%;
   height: 20px;
@@ -136,112 +154,128 @@ img{
   width: 20px;
 }
 
-.card-buttons{
+.card-buttons {
   border-radius: 50%;
   display: inline;
   height: 15px;
   width: 15px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 10px;
+
 }
 
-.close-button{
+.close-button {
   float: right;
-  margin-right: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   height: 15px;
   background-image: url("images/close.svg");
 }
 
-.save-button{
+.save-button {
   background-color: #6E646B;
   border: none;
   color: #FFFFFF;
   font-weight: 700;
-  height: 20px;
+  height: 30px;
   margin-top: 15px;
   text-decoration: none;
   width: 100%;
   width: 100%;
+  border-radius: 5px;
 }
 
-.search-box{
-  border:none;
+.search-box {
+  border: none;
   height: 100%;
   margin: auto;
   margin-right: 0;
 }
 
-.search-button{
+.search-button {
   background-color: lightgray;
   border: none;
   box-sizing: border-box;
-  height: 100%;
-  height: 25px;
+  height: 30px;
+  width: 30px;
   text-decoration: none;
   margin-left: 0;
-  margin-right: 5px;
+  margin-right: 20px;
 }
 
 .search-input {
-  margin-right: -1px
+  margin-right: -1px;
+  height: 24px;
+  font-size: 20px;
+  text-indent: 10px;
 }
 
-.search-button-image{
+.search-input input {
+  height: 30px;
+}
+
+
+.search-button-image {
   height: 10px;
   width: 10px;
 }
 
-.title-box1{
-}
-
-.title-box2{
+.title-box2 {
   display:flex;
   flex-direction:row;
   height: 25px;
   margin-top: 10px;
 }
 
-.body-box{
+.body-box {
   height: 90px;
   width: 100%;
 }
 
-.title-input-box{
+.title-input-box {
   height: 35px;
   margin-bottom: 5px;
 }
-label{
+
+label { 
   font-size: 20px;
 }
+
+.bottom-card-line {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.left-bottom, 
+.delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries ******************* */
 
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
-  h1{
+  h1 {
     font-size: 25px;
   }
-
-  .box2b button{
+  .box2b button {
     font-size: 15px;
     font-weight: 100;
   }
-
 }
 
 @media only screen 
   and (min-device-width: 481px) 
   and (max-device-width: 950px)
   and (-webkit-min-device-pixel-ratio: 2) {
-
-  h1{
+  h1 {
     font-size: 30px;
   }
-
-  .box2b button{
+  .box2b button {
     font-size: 20px;
   }
-
-  
-
 }
