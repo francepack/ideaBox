@@ -12,6 +12,7 @@ var swillButton     =     document.querySelector('.swill-quality');
 var plausibleButton =     document.querySelector('.plausible-quality');
 var geniusButton    =     document.querySelector('.genius-quality');
 var buttons         =     document.querySelector('.box2b');
+var showAll         =     document.querySelector('.show-all');
 
 
 
@@ -28,14 +29,16 @@ cardArea.addEventListener('click', function(event) {
 
 buttons.addEventListener('click', function(event) {
   if (event.target.classList.contains('quality-button')) {
-    random(event.target.innerText);
+    showMore(event.target.innerText);
   };
 });
+
+showAll.addEventListener('click', showMore);
 
 
 window.onload = function() {
   var keys = Object.keys(localStorage);
-  for (var i = 0; i < keys.length; i++) {
+  for (var i = 0; i < 10; i++) {
     var parseObj = JSON.parse(localStorage.getItem(keys[i]));
     newCard = new Ideas(parseObj.id, parseObj.title, parseObj.body, parseObj.quality);
     // var sortedIdeasArray = ideasArray.sort();
@@ -60,16 +63,18 @@ function searchIdeas (event) {
   })
 }
 
-function random (quality) {
+function showMore (quality) {
   var qualityLevel = document.querySelectorAll('.quality-level');
   qualityLevel.forEach(function(objQuality) {
-   if (objQuality.innerText.indexOf(quality) != -1) {
-     objQuality.parentElement.parentElement.style.display = 'block';
-   }  else if (objQuality.innerText.indexOf(quality) === -1) {
-     objQuality.parentElement.parentElement.style.display = 'none';
-   }
-   console.log(objQuality.parentElement.parentElement.parentElement)
- });
+    showAll.innerText = 'Show Less';
+  if (objQuality.innerText.indexOf(quality) != -1) {
+    objQuality.parentElement.parentElement.style.display = 'block';
+  } else if (objQuality.innerText.indexOf(quality) === -1) {
+    objQuality.parentElement.parentElement.style.display = 'none';
+    // showAll.innerText = 'Show All';
+  }
+    console.log(objQuality.parentElement.parentElement.parentElement)
+  });
 }
 
 function createCard (event) {
