@@ -103,7 +103,7 @@ function appendCard (idea) {
   <p class="card-body" contentEditable = "true";>
   ${idea.body}
   </p>
-  <hr>
+
   <section class="bottom-card-line">
     <section class="left-bottom">
       <img class="card-buttons down-button"src="images/down.svg">
