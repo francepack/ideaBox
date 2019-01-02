@@ -1,9 +1,14 @@
+html {
+  background-color: #FFFFFF;
+}
+
 body {
+  background-color: #EAEAEA;
   box-sizing: border-box;
+  color: #5f5c6b;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   max-width: 100%;
-  background-color: #EAEAEA;
 }
 
 .container {
@@ -42,11 +47,16 @@ body {
   margin-top: 10px;
   justify-content: center;
   border-radius: 10px;
+  border: 0;
   height: 30px;
   background-color: #6E646B;
   color: #FFFFFF;
   width: 150px;
   font-size: 18px;
+}
+
+.box3 {
+    background-color: #FFFFFF;
 }
 
 .body-box {
@@ -64,10 +74,6 @@ body {
 
 .input-fields form {
   max-width: 1000px; 
-}
-
-.box3 {
-  background-color: #FFFFFF; 
 }
 
 .box3-container { 
@@ -95,7 +101,14 @@ h1 {
   color: #FFFFFF;
   display: inline;
   font-size: 30px;
-  margin-left: 20px;
+}
+
+.idea-title {
+  padding-left: 20px;
+}
+
+.title-box1 {
+  padding-top: 6px;
 }
 
 h2 {
@@ -267,6 +280,43 @@ label {
     font-weight: 100;
   }
 }
+
+@media only screen and (max-width: 615px) {
+  .box1 {
+    display: block;
+    height: 750px;
+    padding-top: 0;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0;
+  }
+  .title-box1 {
+    text-align: center;
+  }
+  .search-input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .input-fields {
+    margin: 0 10px 20px 10px;
+  }
+  .box2b button {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    font-size: 80%;
+  }
+  .box2b {
+    padding: 0;
+    margin: 0;
+  }
+  .idea-cards {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 
 @media only screen 
   and (min-device-width: 481px) 
