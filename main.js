@@ -90,10 +90,16 @@ function appendCard (idea) {
   ${idea.body}
   </p>
   <hr>
-  <img class="card-buttons down-button"src="images/down.svg">
-  <img class="card-buttons up-button"src="images/up.svg">
-  <h4 class="card-quality"> <span class="quality-level">${qualityArray[idea.quality]}</span></h4>
-  <button onclick="deleteCard(${idea.id})" class="close-button"></button><img class="card-buttons close-button"src="images/close.svg">
+  <section class="bottom-card-line">
+    <section class="left-bottom">
+      <img class="card-buttons down-button"src="images/down.svg">
+      <img class="card-buttons up-button"src="images/up.svg">
+      <h4 class="card-quality"> <span class="quality-level">${qualityArray[idea.quality]}</span></h4>
+    </section>
+    <section class="delete-button">
+      <button onclick="deleteCard(${idea.id})" class="close-button"></button><img class="card-buttons close-button"src="images/close.svg">
+    </section>
+  </section>
   </article>`
   cardArea.innerHTML = card + cardArea.innerHTML;
 }
