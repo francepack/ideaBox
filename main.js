@@ -13,6 +13,8 @@ var plausibleButton =     document.querySelector('.plausible-quality');
 var geniusButton    =     document.querySelector('.genius-quality');
 var buttons         =     document.querySelector('.box2b');
 var showAll         =     document.querySelector('.show-all');
+var titleValue      =     document.querySelector('.title-input-box');
+var bodyValue       =     document.querySelector('.body-box');
 
 
 
@@ -41,11 +43,18 @@ window.onload = function() {
   for (var i = 0; i < 10; i++) {
     var parseObj = JSON.parse(localStorage.getItem(keys[i]));
     newCard = new Ideas(parseObj.id, parseObj.title, parseObj.body, parseObj.quality);
-    // var sortedIdeasArray = ideasArray.sort();
     ideasArray.push(newCard);
     appendCard(newCard); 
   }
 }
+
+titleValue.addEventListener('focusout', function(){
+  if(titleValue.value.length === 0){
+    saveButton.disabled = true;
+  }else if(titleValue.value.length > 0){
+   saveButton.disabled = false;
+  };
+});
 //////need onclick event for "show more" button ///
 
 console.log(ideasArray);
