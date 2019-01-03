@@ -1,4 +1,11 @@
 /* Global ********************************** */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+
+}
+
 
 html {
   background-color: #FFFFFF;
@@ -6,7 +13,6 @@ html {
 
 body {
   background-color: #EAEAEA;
-  box-sizing: border-box;
   color: #5f5c6b;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
@@ -100,7 +106,7 @@ h1 {
 
 .search-input {
   margin-right: -1px;
-  height: 24px;
+  height: 30px;
   font-size: 20px;
   text-indent: 10px;
 }
@@ -209,6 +215,10 @@ textarea {
   font-size: 20px;
 }
 
+.card-quality {
+  margin-top: 0;
+}
+
 /* Idea Box section ********************************** */
 
 .box3 {
@@ -223,7 +233,6 @@ textarea {
   background-color: #FFFFFF;
   box-sizing: border-box;
   max-width: 600px;
-  min-width: 350px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -263,10 +272,10 @@ p {
   padding: 0;
 }
 
-.bottom-card-line span {
+/*.bottom-card-line span {
   position: relative;
   bottom: 10px;
-}
+}*/
 
 .left-bottom, 
 .delete-button {
@@ -286,6 +295,7 @@ p {
   position: relative;
   right: 10px;
 }
+
 
 /* Media Queries ******************* */
 
