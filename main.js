@@ -111,7 +111,7 @@ function appendCard (idea) {
       <h4 class="card-quality"> <span class="quality-level">${qualityArray[idea.quality]}</span></h4>
     </section>
     <section class="delete-button">
-      <button onclick="deleteCard(${idea.id})" class="close-button"></button><img class="card-buttons close-button"src="images/close.svg">
+      <button onclick="deleteCard(${idea.id})" class="close-button"><img class="card-buttons close-button" src="images/close.svg"></button>
     </section>
   </section>
   </article>`
