@@ -3,9 +3,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-
 }
-
 
 html {
   background-color: #FFFFFF;
@@ -184,39 +182,8 @@ textarea {
   border-radius: 5px;
 }
 
-.card-buttons {
-  border-radius: 50%;
-  display: inline;
-  height: 15px;
-  width: 15px;
-  margin: 0 0 10px 10px;
-}
-
-.close-button {
-  height: 15px;
-  width: 15px;
-  background-image: url("images/close.svg");
-}
-
-.save-button {
-  background-color: #6E646B;
-  border: none;
-  color: #FFFFFF;
-  font-weight: 700;
-  height: 30px;
-  margin-top: 15px;
-  text-decoration: none;
-  width: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
 .input-fields label { 
   font-size: 20px;
-}
-
-.card-quality {
-  margin-top: 0;
 }
 
 /* Idea Box section ********************************** */
@@ -265,17 +232,43 @@ p {
   border-top: solid 2px lightgray;
 }
 
+.card-quality {
+  margin-top: 0;
+}
+
+.card-buttons {
+  border-radius: 50%;
+  display: inline;
+  height: 15px;
+  width: 15px;
+  margin: 0 0 10px 10px;
+}
+
+.close-button {
+  height: 15px;
+  width: 15px;
+  background-image: url("images/close.svg");
+}
+
+.save-button {
+  background-color: #6E646B;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  height: 30px;
+  margin-top: 15px;
+  text-decoration: none;
+  width: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
 .bottom-card-line img,
 .bottom-card-line h4,
 .bottom-card-line button {
   margin-bottom: 0;
   padding: 0;
 }
-
-/*.bottom-card-line span {
-  position: relative;
-  bottom: 10px;
-}*/
 
 .left-bottom, 
 .delete-button {
@@ -289,6 +282,10 @@ p {
   border: 0;
   width: 15px;
   height: 15px;
+}
+
+.close-button:focus {
+  outline: 0;
 }
 
 .close-button img {
