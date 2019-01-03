@@ -40,12 +40,12 @@ showAll.addEventListener('click', showMore);
 
 window.onload = function() {
   var keys = Object.keys(localStorage);
-  for (var i = 0; i < 10; i++) {
-    var parseObj = JSON.parse(localStorage.getItem(keys[i]));
+    keys.forEach (key =>{
+    var parseObj = JSON.parse(localStorage.getItem(key));
     newCard = new Ideas(parseObj.id, parseObj.title, parseObj.body, parseObj.quality);
     ideasArray.push(newCard);
     appendCard(newCard); 
-  }
+  })
 }
 
 titleValue.addEventListener('focusout', function(){
@@ -141,7 +141,7 @@ function findIdNumber(objId) {
 };
 
 function vote(event, votebutton) {
-  var index = findIdNumber(event.target.parentElement.dataset.id);
+  var index = findIdNumber(event.target.closest('.idea-cards').dataset.id);
   if (votebutton === 'up') {
     ideasArray[index].updateQuality('up');
     event.target.nextElementSibling.innerText = qualityArray[ideasArray[index].quality];   
@@ -154,5 +154,7 @@ function vote(event, votebutton) {
   ideasArray[index].saveToStorage();
   ideasArray.splice(index, 1, ideasArray[index]);
 };
+
+
 
 
