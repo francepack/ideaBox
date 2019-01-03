@@ -275,6 +275,18 @@ p {
   align-items: center;
 }
 
+.close-button {
+  margin-right: 10px;
+  border: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.close-button img {
+  position: relative;
+  right: 10px;
+}
+
 /* Media Queries ******************* */
 
 
