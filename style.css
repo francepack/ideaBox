@@ -182,6 +182,7 @@ input,
 .input-fields textarea {
   border-radius: 5px;
   border: solid lightgray 2px;
+  text-indent: 10px;
 }
 
 .input-fields input,
@@ -237,7 +238,7 @@ textarea {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 18px;
   text-indent: 10px;
 }
 
@@ -249,7 +250,7 @@ h4 {
 }
 
 p {
-  font-size: 10px;
+  font-size: 14px;
   min-height: 80px;
   text-indent: 10px;
 }
@@ -288,14 +289,17 @@ p {
 
 .down-button:hover {
   border: solid black 1px;
+  cursor: pointer;
 }
 
 .up-button:hover {
   border: solid #26d3b9 1px;
+  cursor: pointer;
 }
 
 .delete-button img:hover {
   border: solid red 1px;
+  cursor: pointer;
 }
 
 .left-bottom, 
