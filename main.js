@@ -31,11 +31,12 @@ cardArea.addEventListener('click', function(event) {
 
 buttons.addEventListener('click', function(event) {
   if (event.target.classList.contains('quality-button')) {
-    showMore(event.target.innerText);
+    console.log(event.target.innerText)
+    showQuality(event.target.innerText);
   };
 });
 
-showAll.addEventListener('click', showMore);
+// showAll.addEventListener('click', showMore);
 
 
 window.onload = function() {
@@ -72,18 +73,31 @@ function searchIdeas (event) {
   })
 }
 
-function showMore (quality) {
-  var qualityLevel = document.querySelectorAll('.quality-level');
-  qualityLevel.forEach(function(objQuality) {
-    showAll.innerText = 'Show Less';
-  if (objQuality.innerText.indexOf(quality) != -1) {
-    objQuality.parentElement.parentElement.style.display = 'block';
-  } else if (objQuality.innerText.indexOf(quality) === -1) {
-    objQuality.parentElement.parentElement.style.display = 'none';
-    // showAll.innerText = 'Show All';
-  }
-    console.log(objQuality.parentElement.parentElement.parentElement)
+function showQuality (qualities) {
+  console.log(qualities + " this is the button clicked");
+  var thisQualityButton = qualities;
+
+  var qualityIdeas = ideasArray.filter(function(obj) {
+    // console.log()
+    var qualityText = qualityArray[obj.quality];
+    return qualityText.includes(thisQualityButton);
   });
+  cardArea.innerHTML = "";
+  qualityIdeas.forEach(function(obj) {
+    appendCard(obj)
+  })
+
+
+  // var qualityLevel = document.querySelectorAll('.quality-level');
+  // qualityLevel.forEach(function(objQuality) {
+  // if (objQuality.innerText.indexOf(quality) != -1) {
+  //   objQuality.parentElement.parentElement.style.display = 'block';
+  // } else if (objQuality.innerText.indexOf(quality) === -1) {
+  //   objQuality.parentElement.parentElement.style.display = 'none';
+  //   // showAll.innerText = 'Show All';
+  // }
+  //   console.log(objQuality.parentElement.parentElement.parentElement)
+  // });
 }
 
 function createCard (event) {
@@ -108,7 +122,7 @@ function appendCard (idea) {
     <section class="left-bottom">
       <img class="card-buttons down-button"src="images/down.svg">
       <img class="card-buttons up-button"src="images/up.svg">
-      <h4 class="card-quality"> <span class="quality-level">${qualityArray[idea.quality]}</span></h4>
+      <h4 class="card-quality"><span class="quality-level">${qualityArray[idea.quality]}</span></h4>
     </section>
     <section class="delete-button">
       <button onclick="deleteCard(${idea.id})" class="close-button"><img class="card-buttons close-button" src="images/close.svg"></button>
@@ -147,7 +161,7 @@ function vote(event, votebutton) {
     event.target.nextElementSibling.innerText = qualityArray[ideasArray[index].quality];   
     console.log(qualityArray[ideasArray[index].quality]);
   } else if (votebutton === 'down') {
-    console.log('down')
+    console.log(qualityArray[ideasArray[index].quality])
     ideasArray[index].updateQuality('down');
     event.target.nextElementSibling.nextElementSibling.innerText = qualityArray[ideasArray[index].quality];
   }
