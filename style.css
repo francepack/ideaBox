@@ -102,6 +102,11 @@ h1 {
   margin-right: 20px;
 }
 
+.search-button:hover {
+  cursor: pointer;
+  background-color: #1aa3f8;
+}
+
 .search-input {
   margin-right: -1px;
   height: 30px;
@@ -150,6 +155,12 @@ h1 {
   font-size: 18px;
 }
 
+.box2b button:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: #1aa3f8; 
+}
+
 .box2 input {
   border: solid lightgray 2px;
 }
@@ -184,6 +195,24 @@ textarea {
 
 .input-fields label { 
   font-size: 20px;
+}
+
+.save-button {
+  background-color: #6E646B;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  height: 30px;
+  margin-top: 15px;
+  text-decoration: none;
+  width: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.save-button:hover {
+  cursor: pointer;
+  background-color: #1aa3f8;
 }
 
 /* Idea Box section ********************************** */
@@ -250,24 +279,23 @@ p {
   background-image: url("images/close.svg");
 }
 
-.save-button {
-  background-color: #6E646B;
-  border: none;
-  color: #FFFFFF;
-  font-weight: 700;
-  height: 30px;
-  margin-top: 15px;
-  text-decoration: none;
-  width: 100%;
-  width: 100%;
-  border-radius: 5px;
-}
-
 .bottom-card-line img,
 .bottom-card-line h4,
 .bottom-card-line button {
   margin-bottom: 0;
   padding: 0;
+}
+
+.down-button:hover {
+  border: solid black 1px;
+}
+
+.up-button:hover {
+  border: solid #26d3b9 1px;
+}
+
+.delete-button img:hover {
+  border: solid red 1px;
 }
 
 .left-bottom, 
